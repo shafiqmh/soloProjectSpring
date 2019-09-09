@@ -6,13 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Record {
+public class Team {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
     String name;
-    String description;
+    String location;
+    String stadium;
 
     public void setId(Long id) {
         this.id = id;
@@ -20,8 +21,11 @@ public class Record {
     public void setName(String name) {
         this.name = name;
     }
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLocation(String location) {
+        this.location = location;
+    }
+    public void setStadium(String stadium) {
+        this.stadium = stadium;
     }
     public Long getId() {
         return id;
@@ -29,7 +33,10 @@ public class Record {
     public String getName() {
         return name;
     }
-    public String getDescription() {
-        return description;
+    public String getLocation() {
+        return location;
+    }
+    public String getStadium() {
+        return stadium;
     }
 }
