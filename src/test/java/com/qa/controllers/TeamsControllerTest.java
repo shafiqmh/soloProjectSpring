@@ -72,5 +72,4 @@ public class TeamsControllerTest {
         teamsController.addTeam(team);
         when(teamsRepository.exists(1L)).thenReturn(true);
     }
-
 }
