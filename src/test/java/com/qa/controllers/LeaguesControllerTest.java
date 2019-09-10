@@ -48,7 +48,7 @@ public class LeaguesControllerTest {
 
     @Test
     public void testGetOneLeague(){
-        League league = new League;
+        League league = new League();
         league.setName("TestLeague");
         when(leaguesRepository.findOne(1L)).thenReturn(league);
         leaguesController.getLeague(1L);
