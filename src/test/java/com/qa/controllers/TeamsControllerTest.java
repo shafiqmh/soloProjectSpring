@@ -63,5 +63,4 @@ public class TeamsControllerTest {
         when(!teamsRepository.exists(1L)).thenReturn(true);
     }
 
-
 }
