@@ -9,6 +9,6 @@ public class AppTest {
     @Test
     public void shouldAnswerWithTrue(){
         app = new App();
-        app.main(new String[]{})
+        app.main(new String[]{});
     }
 }
