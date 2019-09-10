@@ -63,4 +63,12 @@ public class LeaguesControllerTest {
         when(!leaguesRepository.exists(1L)).thenReturn(true);
     }
 
+    @Test
+    public void testAddLeague(){
+        League league = new League();
+        league.setName("TestLeague");
+        league.setFoundDate("TestFoundDate");
+        leaguesController.addLeague(league);
+        when(leaguesRepository.exists(1L)).thenReturn(true);
+    }
 }
