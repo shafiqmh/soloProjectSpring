@@ -63,4 +63,14 @@ public class TeamsControllerTest {
         when(!teamsRepository.exists(1L)).thenReturn(true);
     }
 
+    @Test
+    public void testAddTeam(){
+        Team team = new Team();
+        team.setName("TestTeam");
+        team.setLocation("TestLocation");
+        team.setStadium("TestStadium");
+        teamsController.addTeam(team);
+        when(teamsRepository.exists(1L)).thenReturn(true);
+    }
+
 }
