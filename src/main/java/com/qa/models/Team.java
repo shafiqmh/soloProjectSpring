@@ -9,7 +9,7 @@ public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    String name;
+    String team;
     String location;
     String stadium;
 
@@ -17,7 +17,7 @@ public class Team {
         this.id = id;
     }
     public void setName(String name) {
-        this.name = name;
+        this.team = name;
     }
     public void setLocation(String location) {
         this.location = location;
@@ -29,7 +29,7 @@ public class Team {
         return id;
     }
     public String getName() {
-        return name;
+        return team;
     }
     public String getLocation() {
         return location;
